@@ -1,0 +1,31 @@
+llama2-7b:
+  hf_key: "NousResearch/Llama-2-7b-chat-hf"
+  question_start_tag: "[INST] "
+  question_end_tag: " [/INST]"
+  answer_tag: ""
+  flash_attention2: "false"
+  gradient_checkpointing: "true"
+  ft_model_path: "locuslab/tofu_ft_llama2-7b"
+
+llama3-8b:
+  hf_key: "meta-llama/Llama-3.1-8B-Instruct"
+  question_start_tag: "<|start_header_id|>user<|end_header_id|>\n\n"
+  question_end_tag: "<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+  answer_tag: ""
+  flash_attention2: "false"
+  gradient_checkpointing: "true"
+  ft_model_path: "locuslab/tofu_ft_llama3-8b"
+
+phi:
+  hf_key: "microsoft/phi-1_5"
+  question_start_tag: "Question: "
+  question_end_tag: "\n"
+  answer_tag: "Answer: "
+  flash_attention2: "false"
+  gradient_checkpointing: "false"
+
+qwen2.5-7b:
+  hf_key: "Qwen/Qwen2.5-7B-Instruct"
+  use_chat_template: "true"
+  flash_attention2: "false"
+  gradient_checkpointing: "true"
